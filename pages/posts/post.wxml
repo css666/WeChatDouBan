@@ -15,7 +15,7 @@
             <image src="/images/post/sh.jpg" data-postId="3"></image>
         </swiper-item>
     </swiper>
-    <block wx:for="{{postList}}" wx:for-item="item" wx:for-index="idx">
+    <block wx:for="{{postList}}" wx:key="item" wx:for-index="idx">
         <!--//template-->
         <view catchtap="onPostTap" data-postId="{{item.postId}}">
              <template is="postItem" data="{{...item}}"/>

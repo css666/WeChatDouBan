@@ -4,10 +4,11 @@ var app = getApp()
 var util = require('../../../utils/util.js')
 Page({
   data: {
-    movieList:""
+    movieList:"",
+    navigateTitle:""
   },
   onLoad: function (options) {3
-    console.log(jiujiuHomeData.data);
+   
     this.setData({
       movieList: jiujiuHomeData.data
     });
@@ -34,7 +35,7 @@ Page({
     var movies = [];
     for (var idx in moviesDouban.subjects) {
       var subject = moviesDouban.subjects[idx];
-      var title = subject.title;
+      var title =subject.title;
       if (title.length >= 6) {
         title = title.substring(0, 6) + "...";
       }

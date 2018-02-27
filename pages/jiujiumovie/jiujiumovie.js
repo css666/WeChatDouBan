@@ -10,7 +10,7 @@ Page({
   },
 
   onLoad: function (event) {
-    console.log(jiujiuHomeData);
+   
     this.setData({
       jiujiuHome:jiujiuHomeData.data
     });
